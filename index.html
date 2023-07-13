@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container text-center text-md-start">
+        <div class="row align-items-center">
+            <h1 class="fw-bold col-md-9 col-12">My Library</h1>
+            <div class="col-md-3 col-12 pe-2 text-md-end text-center ">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add new Book
+                  </button>
+            </div>
+        </div>
+    </div>
+    <hr style="height: 4px; border: none; background-color:black">
+    <div class="container-fluid ">
+        <div class="row g-3 justify-content-center center mt-3">
+            
+        </div>
+    </div>
+
+    
+      
+      <!-- Modal -->
+      <div class="modal fade modal-sm" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add new Book</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addBookForm">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Book title</label>
+                            <input type="text" class="form-control" id="title" aria-describedby="emailHelp" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="Author" class="form-label">Author name</label>
+                            <input type="text" class="form-control" id="Author" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="pages" class="form-label">Pages</label>
+                            <input type="number" class="form-control" id="pages" required>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input mb-5" type="checkbox" value="" checked id="read" >
+                            <label class="form-check-label" for="read">
+                              Did you Read it?
+                            </label>
+                          </div>
+                        <button type="submit" class="btn btn-primary mt-3 submit" style="min-width: 100%;" data-bs-dismiss="modal">Submit</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
